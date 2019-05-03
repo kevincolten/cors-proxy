@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "cors-proxy-executor",
+    "name": "cors-proxy",
+    "region": "us-west-1"
+  },
+  "api": {
+    "id": "krhbsxrxp2"
+  }
+}

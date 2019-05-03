@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "CORS proxy",
   "dependencies": {
-    "request": "^2.69.0",
-    "serverless": "^1.24.1"
+    "claudia": "^5.4.2",
+    "request": "^2.69.0"
+  },
+  "scripts": {
+    "update": "claudia update --profile claudia",
+    "create": "claudia create --profile claudia --region us-west-1 --handler handler.corsProxy --deploy-proxy-api",
+    "start": "serverless offline"
   },
   "devDependencies": {
-    "serverless-offline": "^3.9.0"
+    "serverless": "^1.41.1",
+    "serverless-offline": "^4.9.4"
   }
 }
